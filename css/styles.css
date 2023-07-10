@@ -1,0 +1,77 @@
+@font-face {
+    font-family: chineseRocks;
+    src: url(../fonts/chineserocksrg.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    position: fixed;
+    top: 100px;
+    left: 100px;
+    float: left;
+    font-family: chineseRocks;
+    color: white;
+    font-style: italic;
+}
+
+nav ul {
+    margin-top: 40px;
+}
+
+nav ul li {
+    list-style: none;
+    opacity:.6;
+    font-size: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;    
+}
+
+.bg {
+    background-image:linear-gradient(to right, rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.158)), url(../img/k3-fotor-2023070820531.jpg);
+    height: 100vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+footer{
+    z-index: 5000;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 2px;
+    height: fit-content;
+    background-image:linear-gradient(to right , black 40%, #AEA930);
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    opacity:.6;
+    font-size: larger;    
+}
+
+footer a :hover {
+    animation: footer-animation .2s alternate infinite;
+}
+
+@keyframes footer-animation {
+        0%{transform: scale(1);}
+        100%{transform: scale(1.2);}
+}
